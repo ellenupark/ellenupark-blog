@@ -1,11 +1,11 @@
 # Site settings
 author: Ellen Park
-title: 
+title: Exploration of Coding
 header-img: img/home-bg.png
 email: ellenupark@gmail.com
 copyright_name: Ellen Park
 description: > # this means to ignore newlines until "baseurl:"
-  
+  a personal journey to software engineering
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ellenupark
