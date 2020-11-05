@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Delving into Rails"
-date:       2020-11-05 23:41:47 +0000
+date:       2020-11-05 18:41:48 -0500
 permalink:  delving_into_rails
 ---
 
 
 For my third project at Flatiron I was tasked with creating a Rails applications. I recently got a pomsky puppy. So, my head has been filled with nothing but dog related ideas. Naturally, I geared my app towards dog owners. My app allows users to create an account, add pets to their account and arrange play dates with other dog owners. 
 
-To begin, I spent a lot of time figuring out the associations. I knew right off the bat that I would have a User and Pet model. Users would ` have_many :pets`, pets would `belong_to :user`. That part was simple. The tricky part was how to introduce the Event element. After much thinking and drawing out many diagrams, I created a join table (invites) to connect pets to events. The end result was:
+To begin, I spent a lot of time figuring out the associations. I knew right off the bat that I would have a User and Pet model. Users would `have_many :pets` and pets would `belong_to :user`. That part was simple. The tricky part was how to introduce the Event element. After much thinking and drawing out many diagrams, I created a join table (invites) to connect pets to events. The end result was:
 
 
 ```
