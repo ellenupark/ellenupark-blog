@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Beginner Tips: Async/Await"
-date:       2020-12-11 15:52:39 +0000
+date:       2020-12-11 10:52:40 -0500
 permalink:  beginner_tips_async_await
 ---
 
@@ -111,7 +111,7 @@ The order of operations can be understood as below:
 2. When sayHello() begins, it first executes **await timeout(4000)**. After 4 seconds have passed it prints out "Hello!", fulfilling its promise.
 3. Now that sayHello() has finished, sayHelloAndGreet() can continue executing code. The next line invokes greeting(). However, because there is no await before greeting() it does not wait for greeting() to complete and interprets greeting() as  **Promise {pending}**. (Remember that this does not mean greeting() stops executing!)
 4. With everything complete in sayHelloAndGreet(), the following **.then** is executed printing out "Finished saying hello and greeting!".
-5. However, greeting() is still executing in the background! Once it finishes it then prints "How are you?" to the console.
+5. However, greeting() is still executing in the background! Once it finishes it then prints "How are you?" to the console. 
 
 
 
